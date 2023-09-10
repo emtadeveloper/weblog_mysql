@@ -1,0 +1,61 @@
+<div class="row mbn-30">
+  <!-- Revenue Statistics Chart Start -->
+  <div class="col-md-12 mb-30">
+    <div class="box">
+      <div class="box-head">
+        <div class="row">
+          <h4 class="title">لیست مطالب بلاگ</h4>
+        </div>
+      </div>
+      <div class="box-body">
+        <h1>
+          {{usrID}}
+        </h1>
+        <table class="table table-bordered mb-0">
+          <!-- Table Head Start -->
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>عنوان</th>
+              <th>نویسنده</th>
+              <th>تاریخ ایجاد</th>
+              <th>تعداد بازدید</th>
+              <th>عملیات</th>
+            </tr>
+          </thead>
+          <!-- Table Head End -->
+
+          <!-- Table Body Start -->
+          <tbody>
+            {{!-- {{#each Posts}} --}}
+            {{#each Posts}}
+              <tr>
+                <td>1</td>
+                <td><a href="###">{{this.title}}</a></td>
+                <td>{{this.author_id}}</td>
+                <td>{{this.created_at_persian}}</td>
+                <td>{{this.persian_views}}</td>
+                {{!-- <td>{{this.presenter.jalaliCreatedAt()}}</td> --}}
+                {{!-- <td>{{this.presenter.PersionViews()}}</td> --}}
+                <td>
+                  <div class="table-action-buttons">
+                    <a
+                      class="edit button button-box button-xs button-info"
+                      href="#"
+                    ><i class="zmdi zmdi-edit"></i></a>
+                    <a
+                      class="delete button button-box button-xs button-danger"
+                      href="#"
+                    ><i class="zmdi zmdi-delete"></i></a>
+                  </div>
+                </td>
+              </tr>
+            {{/each}}
+          </tbody>
+          <!-- Table Body End -->
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- Revenue Statistics Chart End -->
+</div>

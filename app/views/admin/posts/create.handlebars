@@ -1,0 +1,68 @@
+<div class="row mbn-30">
+  <!-- Revenue Statistics Chart Start -->
+  <div class="col-md-12 mb-30">
+    <div class="box">
+      <div class="box-head">
+        <div class="row">
+          <h4 class="title">اطلاعات مطلب</h4>
+        </div>
+      </div>
+      <div class="box-body">
+        <form action="/admin/post/store" method="POST">
+          <div class="row mbn-20">
+            <div class="col-12 mb-20">
+              <input
+                type="text"
+                id="formLayoutUsername3"
+                class="form-control"
+                placeholder="عنوان مطلب"
+              />
+            </div>
+            <div class="col-12 mb-20">
+              <input
+                type="email"
+                id="formLayoutEmail3"
+                class="form-control"
+                placeholder="نامک مطلب"
+              />
+            </div>
+
+            <div class="col-12 mb-20">
+              <textarea
+                id="formLayoutMessage1"
+                class="form-control"
+                pla
+                ceholder="محتوای مطلب"
+              ></textarea>
+            </div>
+
+            <div class="col-12 mb-20">
+              <h6 class="mb-15">وضعیت مطلب</h6>
+              <div class="form-group">
+                <label class="inline"><input
+                    name="basicRadio"
+                    type="radio"
+                  />پیش نویس</label>
+                <label class="inline"><input
+                    name="basicRadio"
+                    type="radio"
+                  />منتشرشده</label>
+                <label class="inline"><input name="basicRadio" type="radio" />در
+                  حال بازبینی</label>
+              </div>
+            </div>
+
+            <div class="col-12 mb-20">
+              <input
+                type="submit"
+                value="ذخیره سازی"
+                class="button button-primary"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Revenue Statistics Chart End -->
+</div>
